@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.electriceagles.team1781.scoutingapp30.MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Team"
+        android:id="@+id/teamButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/defenseTextView"
+        android:layout_alignStart="@+id/defenseTextView" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamSpinner"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/teamButton"
+        android:layout_toRightOf="@+id/teamButton"
+        android:layout_toEndOf="@+id/teamButton"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Team"
+        android:id="@+id/addTeamButton"
+        android:layout_below="@+id/defenseTextView"
+        android:layout_marginTop="71dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defense"
+        android:id="@+id/defenseButton"
+        android:layout_above="@+id/problemButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive System"
+        android:id="@+id/driveSystemButton"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_alignTop="@+id/autonomousButton"
+        android:layout_toRightOf="@+id/add"
+        android:layout_toEndOf="@+id/add" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Problems"
+        android:id="@+id/problemButton"
+        android:layout_marginTop="124dp"
+        android:layout_below="@+id/autonomousButton"
+        android:layout_alignRight="@+id/autonomousButton"
+        android:layout_alignEnd="@+id/autonomousButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scoring"
+        android:id="@+id/scoringButton"
+        android:layout_alignTop="@+id/teleOpButton"
+        android:layout_alignLeft="@+id/defenseButton"
+        android:layout_alignStart="@+id/defenseButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TeleOp"
+        android:id="@+id/teleOpButton"
+        android:layout_alignTop="@+id/problemButton"
+        android:layout_alignRight="@+id/driveSystemButton"
+        android:layout_alignEnd="@+id/driveSystemButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autonomous"
+        android:id="@+id/autonomousButton"
+        android:layout_marginTop="133dp"
+        android:layout_below="@+id/addTeamButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD DEFENSE"
+        android:id="@+id/add"
+        android:layout_above="@+id/autonomousButton"
+        android:layout_alignLeft="@+id/defenseButton"
+        android:layout_alignStart="@+id/defenseButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Defense"
+        android:id="@+id/defenseTextView"
+        android:layout_below="@+id/teamSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addDefenseSpinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/teamSpinner"
+        android:layout_alignLeft="@+id/teamSpinner"
+        android:layout_alignStart="@+id/teamSpinner" />
+
+
+</RelativeLayout>

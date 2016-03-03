@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1200dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.electriceagles.team1781.scoutingapp30.ScoringActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Scoring"
+        android:id="@+id/scoringTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Can they collect boulders?"
+        android:id="@+id/collectBouldersTextView"
+        android:layout_below="@+id/scoringTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yesBoulderRadioButton"
+        android:checked="false"
+        android:layout_below="@+id/collectBouldersTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="No"
+    android:id="@+id/noBoulderRadioButton"
+    android:checked="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/collectBouldersTextView"
+        android:layout_alignRight="@+id/collectBouldersTextView"
+        android:layout_alignEnd="@+id/collectBouldersTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Can they score high goals?"
+        android:id="@+id/highGoalTextView"
+        android:layout_below="@+id/yesBoulderRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yesHGRadioButton"
+        android:layout_below="@+id/highGoalTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Can they score low goals?"
+        android:id="@+id/lowGaoalTextView"
+        android:layout_below="@+id/yesHGRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/noHGRadioButton"
+        android:layout_above="@+id/lowGaoalTextView"
+        android:layout_alignRight="@+id/highGoalTextView"
+        android:layout_alignEnd="@+id/highGoalTextView"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yesLGRadioButton"
+        android:layout_below="@+id/lowGaoalTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/noLGRadioButton"
+        android:layout_alignTop="@+id/yesLGRadioButton"
+        android:layout_alignLeft="@+id/noBoulderRadioButton"
+        android:layout_alignStart="@+id/noBoulderRadioButton"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="High goal accuracy (Successful goals/Total attempts)"
+        android:id="@+id/HGAccuracyTextView"
+        android:layout_below="@+id/yesLGRadioButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_below="@+id/HGAccuracyTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal" />
+</RelativeLayout>
+</ScrollView>
